@@ -1,4 +1,4 @@
-module github.com/xiangyu123/golang-demo
+module github.com/xiangyu123/golang-demo/v2
 
 go 1.13
 

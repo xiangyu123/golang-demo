@@ -8,6 +8,7 @@ CURRENT_DIR := $(shell pwd)
 
 .PHONY build: vendor format
 	# 生成的二进制将以cmd下面的目录名来命名
+	go mod tidy
 	GOBIN=$(CURRENT_DIR)/bin  go install -mod=vendor -ldflags '-s -w' ./cmd/...
 
 format:
